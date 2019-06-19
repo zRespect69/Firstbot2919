@@ -57,7 +57,7 @@ if (message.content.startsWith('arsetavatar')) {
 
 
 
-Spam1.on('ready', async() => {
+client.on('ready', async() => {
     console.log('hello')
     const server = "590851546875559946"; // ايدي السررفر
 const channel = "590851546875559948";//ايدي الروم
