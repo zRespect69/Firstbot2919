@@ -1,16 +1,16 @@
 
 
 
-client.on('ready',  () => {
-  console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'); 
-  console.log('by BadGuY');
-  console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
-  console.log(`Logged in as  * [ " ${client.user.username} " ] servers! [ " ${client.guilds.size} " ]`);
-  console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
-  console.log('is online')
-client.user.setStatus("dnd");
+const Discord = require("discord.js");
+const client = new Discord.Client();
+const bot = new Discord.Client();
+const hero = client;
+const Data = {};
+const fs = require("fs");
+const ms = require("ms");
+client.on('ready', () => {
+    console.log(`Logged in as ${client.user.tag}!`);
 });
-
 
 
 
@@ -56,20 +56,10 @@ if (message.content.startsWith('arsetavatar')) {
 
 
 
-const Discord = require("discord.js");
-const client = new Discord.Client();
-const bot = new Discord.Client();
-const hero = client;
-const Data = {};
-const fs = require("fs");
-const ms = require("ms");
-client.on('ready', () => {
-    console.log(`Logged in as ${client.user.tag}!`);
-});
 
 
 
-Spam1.on('ready', async() => {
+client.on('ready', async() => {
     console.log('hello')
     const server = "590851546875559946"; // ايدي السررفر
 const channel = "590864664347279361";//ايدي الروم
