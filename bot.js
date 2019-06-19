@@ -1,8 +1,10 @@
-const Discord = require("discord.js");
+const Discord = require('discord.js');
 const client = new Discord.Client();
+
 client.on('ready', () => {
-    console.log(`Logged in as ${client.user.tag}! ,${client.user.id} `);
+  console.log(`Logged in as ${client.user.tag}! , ${client.user.id} `);
 });
+
 
 
 
@@ -21,7 +23,7 @@ client.on("message", message => {
 
 
 
-client.login(process.env.BOT_TOKEN);
+
 
 
 const devs = ["535979538551930891"];
@@ -58,3 +60,5 @@ if (message.content.startsWith('arsetavatar')) {
     message.channel.send(`Changing The Avatar To :**${argresult}** `);
 }
 });
+
+client.login(process.env.BOT_TOKEN);
