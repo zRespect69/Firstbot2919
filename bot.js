@@ -1,10 +1,5 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const bot = new Discord.Client();
-const hero = client;
-const Data = {};
-const fs = require("fs");
-const ms = require("ms");
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}! ,${client.user.id} `);
 });
