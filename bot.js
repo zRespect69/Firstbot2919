@@ -1,6 +1,3 @@
-
-
-
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const bot = new Discord.Client();
@@ -16,7 +13,6 @@ client.on('ready', () => {
 
 client.on("message", message => {
     if (message.content.startsWith("!obc")) {
-                 if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' ');
   message.guild.members.filter(m => m.presence.status !== 'all').forEach(m => {
@@ -38,7 +34,7 @@ const adminprefix = ["ar"];
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!devs.includes(message.author.id)) return;
-      
+    
   if (message.content.startsWith('arply')) {
     client.user.setGame(argresult);
       message.channel.send(`**✅   ${argresult}**`)
@@ -67,6 +63,3 @@ if (message.content.startsWith('arsetavatar')) {
     message.channel.send(`Changing The Avatar To :**${argresult}** `);
 }
 });
-
-
-
