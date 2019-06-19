@@ -480,4 +480,4 @@ MREg.on('guildMemberAdd', member => {
  
  
  
-MREg.login('NTkwNzIzMjI3ODE5NDQyMTg2.XQmYTg.bg4Y_RNbCBv9uAOIExGhqOzKrM8')
+MREg.login('(process.env.BOT_TOKEN);
