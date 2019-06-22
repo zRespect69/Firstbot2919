@@ -6,8 +6,6 @@ client.on('ready', () => {
 });
 
 if(command === "#clear") {
-    let textxt = args.slice(0).join("");
-    if (textxt == "") {
         msg.delete().then
     msg.channel.send("***```ضع عدد الرسائل التي تريد مسحها 👌```***").then(m => m.delete(3000));
 } else {
