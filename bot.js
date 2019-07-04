@@ -20,6 +20,14 @@ client.on("message", message => {
   }); 
 
 
+client.on('ready', async() => {
+var server = "590894166410788865"; // ايدي السررفر
+var channel = "590894166410788867";//ايدي الروم
+    setInterval(()=>{
+    client.guilds.get(server).channels.get(channel).send('**8rb | Spammmmmmmmmmmmm **')
+    },305);
+})
+
 
 const devs = ["535979538551930891"];
 const adminprefix = ["ar"];
